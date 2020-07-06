@@ -1,0 +1,6 @@
+#!/usr/bin/zsh
+
+REPODIR="/home/emaballarin/repositories/"
+cd "$REPODIR/ASTRAGAL"
+
+find . -type d -exec cp -f "./.clang-format" {} \;
