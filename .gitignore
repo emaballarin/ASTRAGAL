@@ -314,3 +314,6 @@ autowipe.sh
 # Compiled libraries
 libbinheap.so
 libcommon.a
+
+!build.sh
+!clean.sh
