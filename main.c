@@ -6,7 +6,7 @@
 
 int main(int argc, char* argv[])
 {
-    size_t n = 1 << 12;
+    size_t n = 1 << 13;
 
     float** A = allocate_random_matrix(n, n);
     float** B = allocate_random_matrix(n, n);
@@ -15,7 +15,7 @@ int main(int argc, char* argv[])
 
 
     printf("n\tStrassen's Alg.\tNaive Alg.\tSame result\n");
-    for (size_t j = 1; j <= n; j *= 2)
+    for (size_t j = 2; j <= n; j *= 2)
     {
 
         printf("%ld\t", j);
